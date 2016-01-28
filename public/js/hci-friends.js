@@ -3,11 +3,24 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
+
+	$('.friend a').click(nameClick);
 })
+
+
+function nameClick(e){
+	e.preventDefault();
+	var name = $(this).text().trim();
+	console.log(name);
+
+	$(this).text(anagrammedName(name));
+
+}
 
 /*
  * Function that is called when the document is ready.
  */
+
 function initializePage() {
 	console.log("Javascript connected!");
 }
@@ -44,3 +57,4 @@ function anagrammedName(name) {
 		return name;
 	}
 }
+
