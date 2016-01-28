@@ -22,14 +22,19 @@
 </head>
 
 <body>
+
+    {{> header }}
+
     <div class="container">
         <h1>My HCI Friends</h1>
 
         {{#each friends}}
             <div class="friend">
-                <img src="{{imageURL}}" class="img-responsive img-rounded">
-                <a href="#"> {{name}} </a>
-                <p> {{description}} </p>
+                <a href="/profile/{{name}}" class="thumbnail">
+                    <img src="{{imageURL}}" class="img-responsive img-rounded">
+                    <a href="/profile/{{name}}"> {{name}} </a>
+                    <p> {{description}} </p>
+                </a>
                 <hr>
             </div>
         {{/each}}

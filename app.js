@@ -13,6 +13,9 @@ var index = require('./routes/index');
 // var user = require('./routes/user');
 
 var add = require('./routes/add')
+var profile = require('./routes/profile')
+var newsfeed = require('./routes/newsfeed')
+var addnews = require('./routes/addnews')
 
 var app = express();
 
@@ -42,6 +45,10 @@ app.get('/', index.view);
 // app.get('/users', user.list);
 
 app.get('/add', add.addFriend);
+app.get('/profile/:name', profile.viewProfile);
+app.get('/news', newsfeed.viewNews)
+app.get('/addnews', addnews.addNews);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

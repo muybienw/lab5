@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>Added Friend</title>
+    <title>News Feed</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -18,13 +18,34 @@
     <link href="/css/bootstrap-theme.css" rel="stylesheet">
     <link href="/css/hci-friends.css" rel="stylesheet">
 
+
 </head>
 
 <body>
-    <div class="container">
-        <h5> Success! </h5>
-        <a href="/"> Back &raquo; </a>
-    </div>
+
+{{> header }}
+
+<div class="container">
+
+    <form id="addFriendForm" role="form" method="get" action="/addnews">
+        <h3>Post a news!</h3>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="content">Content:</label>
+            <input type="text" class="form-control" id="content" placeholder="Content" name="content">
+        </div>
+        <input type="submit" id="submitBtn" class="btn btn-default" value="Add the news">
+    </form>
+
+    <h1>What's happening</h1>
+
+    {{#each news}}
+        {{> newsfeed }}
+    {{/each}}
+
 </div>
 
 <!--hci-friends.js and bootstrap.js depend on jquery-1.11.10.js-->

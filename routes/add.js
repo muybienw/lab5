@@ -1,4 +1,4 @@
-var data = require("../data.json");
+var data = require('../data.json');
 
 exports.addFriend = function(req, res) {    
 	// Your code goes here
@@ -10,10 +10,10 @@ exports.addFriend = function(req, res) { 
                     "description" : description,
                     "imageURL": imageURL};
 
-    console.log(name);
-    console.log(description);
-    console.log(imageURL);
-    console.log(newFriend);
+    //console.log(name);
+    //console.log(description);
+    //console.log(imageURL);
+    //console.log(newFriend);
 
 
     data["friends"].push(newFriend);

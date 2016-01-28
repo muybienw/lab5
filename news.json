@@ -1,0 +1,16 @@
+{
+  "news": [
+    {
+      "user": "Doug Engelbart",
+      "content": "Meet me in UCSD today!"
+    },
+    {
+      "user": "Mubin",
+      "content": "Working on my introHCI lab5 right now..."
+    },
+    {
+      "user": "Vinny",
+      "content": "Who has a spare phone? mine is broken :("
+    }
+  ]
+}

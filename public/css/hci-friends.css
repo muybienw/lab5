@@ -16,3 +16,37 @@ h1, h2, h3, h4, h5 {
 .friend{
 	width: 12em;
 }
+
+.jumbotron img{
+	width: 8em;
+}
+
+.jumbotron {
+
+}
+
+.newsfeed {
+	margin: 1em;
+}
+
+.header div{
+	text-align: center;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: white;
+	vertical-align: middle;
+	font-weight: bold;
+	padding: .5em;
+	font-size: 1.2em;
+}
+
+.header a{
+	color: white;
+}
+
+#friends_btn {
+	background-color: #67b168;
+}
+
+#news_btn {
+	background-color: #2a6496;
+}
