@@ -4,7 +4,7 @@
 $(document).ready(function() {
 	initializePage();
 
-	// $('.friend a').click(nameClick);
+	$('.friend .name_tag').click(nameClick);
 })
 
 
